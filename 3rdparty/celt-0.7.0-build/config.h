@@ -3,7 +3,7 @@
 #define CELT_MAJOR_VERSION 0
 #define CELT_MICRO_VERSION 0
 #define CELT_MINOR_VERSION 7
-#define CELT_VERSION "0.7.0"
+#define CELT_VERSION "0.7.1"
 #define FLOATING_POINT
 #define VAR_ARRAYS
 #define HAVE_LRINTF 1

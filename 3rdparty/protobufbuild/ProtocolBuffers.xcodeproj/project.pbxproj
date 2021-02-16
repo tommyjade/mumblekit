@@ -349,12 +349,14 @@
 		2845A6B2132D99550034D631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
 		2845A6B3132D99550034D631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
@@ -384,6 +386,7 @@
 		28498F22138AB6C9000509DD /* BetaDist */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = BetaDist;
 		};
@@ -405,6 +408,7 @@
 		28A2AECB1478AA1B00F3B83F /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = AppStore;
 		};

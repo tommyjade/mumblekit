@@ -53,10 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		280D5F85132AE73C00540C3D /* libCELT-0.7.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCELT-0.7.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		280D5F85132AE73C00540C3D /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		280D5F88132AE73C00540C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28190CFB150D600400E07613 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		28656110132AE7A80011637C /* CELT-0.7.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "CELT-0.7.0.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28656110132AE7A80011637C /* .dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = .dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		28656116132AE7A80011637C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28656121132AE8240011637C /* CELT-0.7.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CELT-0.7.pch"; sourceTree = "<group>"; };
 		28656124132AE83B0011637C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -110,12 +110,13 @@
 				28190CFA150D5FE900E07613 /* Build Configurations */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		280D5F86132AE73C00540C3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				280D5F85132AE73C00540C3D /* libCELT-0.7.0.a */,
-				28656110132AE7A80011637C /* CELT-0.7.0.dylib */,
+				280D5F85132AE73C00540C3D /* lib.a */,
+				28656110132AE7A80011637C /* .dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,7 +227,7 @@
 			);
 			name = "CELT-0.7 (iOS)";
 			productName = "CELT-0.7";
-			productReference = 280D5F85132AE73C00540C3D /* libCELT-0.7.0.a */;
+			productReference = 280D5F85132AE73C00540C3D /* lib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2865610F132AE7A80011637C /* CELT-0.7 (Mac) */ = {
@@ -243,7 +244,7 @@
 			);
 			name = "CELT-0.7 (Mac)";
 			productName = "CELT-0.7.0";
-			productReference = 28656110132AE7A80011637C /* CELT-0.7.0.dylib */;
+			productReference = 28656110132AE7A80011637C /* .dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -333,6 +334,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28190CFB150D600400E07613 /* Base.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -341,18 +344,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28190CFB150D600400E07613 /* Base.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
 		280D5F90132AE73C00540C3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		280D5F91132AE73C00540C3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -360,12 +369,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28190CFB150D600400E07613 /* Base.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = BetaDist;
 		};
 		28498F26138AB6D5000509DD /* BetaDist */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = BetaDist;
 		};
@@ -397,12 +410,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28190CFB150D600400E07613 /* Base.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = AppStore;
 		};
 		28A2AECF1478AA2400F3B83F /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = AppStore;
 		};
